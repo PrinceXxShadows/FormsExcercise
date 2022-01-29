@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Excercise</title>
+</head>
+<body>
+    <form>
+    <fieldset> 
+        <legend>Customer Experience Survey</legend>
+   <div>
+       <label for="storeNum">Store Number</label>
+    <select name="storeNum" id="storeNum">
+    
+        <option value="Select A Store" disable selected>Select A Store</option>
+        <option value="3109">3109</option>
+        <option value="2421">2421</option>
+        <option value="5357">5357</option>
+      </select>
+   </div>
+   <div>
+       <fieldset>
+           <Legend>When You Visited</Legend>
+           <label for="date">Date Visited</label>
+           <input type="date" name="date" id="date" min="2022-01-01" max="2022-12-31">
+           <br>
+           <label for="time">Time</label>
+           <input type="time" name="time" id="time">
+       </fieldset>
+   </div>
+   <div>
+       <Label for="name">Full Name</Label>
+       <input type="text" placeholder="Name"></input>
+       <br>
+       <Label for="email">Email</Label>
+       <input type="text" placeholder="Email"></input>
+
+   </div>
+   <div>
+       <fieldset>
+           <legend> How would you rate your level of satisfaction with your visit?</legend>
+           <div>
+       <input type="radio" id="sat" name="rate" value="Satisfied"></input>
+       <label for="sat">Satisfied</label>
+           </div>
+           <div>
+       <input type="radio" checked id="nor" name="rate" value="Satisfied nor Dissatisfied"></input>
+       <label for="nor">Satisfied nor Dissatisfied</label>
+       </div>
+       <div>
+       <input type="radio" id="dis" name="rate" value=">Dissatisfied"></input>
+       <label for="dis">Dissatisfied</label>
+       </div>
+       </fieldset>
+   </div>
+   <div>
+       <Label for="question">Tell us about your experience</Label>
+       <br>
+       <textarea name="question" id="question" cols="20" rows="2"></textarea>
+       <br>
+       <label for="visit">Times visited in the last month</label>
+       <br>
+       <input type="number" name="visit" id="visit" step="1" min="1" max="30">
+   </div>
+    <div>
+        <input type="checkbox" name="check" id="check" required>
+        <label for="check">Please check this box if you are willing to be contacted about your experience</label>
+        <br>
+        <Label for="password">Password</Label>
+        <input type="password" name="password" id="password" alphabet="A-Za-z0-9+_%@!$*~-"
+        requiredclasses="[A-Z] [a-z] [0-9] [+_%@!$*~-]"
+        requiredclasscount="3" minlength="5" maxlength="10" required>
+        </div>
+        <div>
+        <input type="reset"></input>
+        <input type="submit"></input>
+        </div>
+        
+        
+    </fieldset>
+    </form>
+    
+</body>
+</html>
