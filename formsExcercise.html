@@ -69,9 +69,7 @@
         <label for="check">Please check this box if you are willing to be contacted about your experience</label>
         <br>
         <Label for="password">Password</Label>
-        <input type="password" name="password" id="password" required alphabet="A-Za-z0-9+_%@!$*~-"
-        requiredclasses="[A-Z] [a-z] [0-9] [+_%@!$*~-]"
-        requiredclasscount="3"  required minlength="5" maxlength="10">
+        <input type="password" name="password" id="password" pattern=".{5,10}" title="Please enter a password that is between 5 and 10 characters in length">
         </div>
         <div>
         <input type="reset"></input>
